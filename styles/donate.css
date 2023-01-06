@@ -3,10 +3,15 @@
   font-family: "Open Sans", sans-serif;
 }
 
+section {
+  margin: 0 auto;
+  max-width: 1130px;
+  margin-top: 130px;
+}
 /* Header Section Style */
 .header {
   background-color: #fafafa;
-  height: 660px;
+  /* height: 660px; */
 }
 
 /* Banner Style */
@@ -28,6 +33,7 @@
 }
 
 .banner-title {
+  width: 515px;
   font-weight: 700;
   font-size: 65px;
   line-height: 79px;
@@ -35,6 +41,7 @@
 }
 
 .banner-description {
+  width: 470px;
   margin-top: 20px;
   margin-bottom: 30px;
   font-size: 18px;
@@ -46,7 +53,8 @@
   width: 50%;
 }
 .banner-image img {
-  margin-left: 140px;
+  margin-left: 160px;
+  height: 650px;
 }
 
 @media screen and (max-width: 1368px) {
@@ -82,6 +90,10 @@
   cursor: pointer;
 }
 
+.donate-button:hover {
+  background: #f13434;
+}
+
 .watch-button {
   border: 1px solid #ff5959;
   color: #ff5959;
@@ -92,4 +104,217 @@
   font-size: 20px;
   line-height: 24px;
   cursor: pointer;
+}
+
+/* Donate Section Styles */
+
+.donate {
+  margin-top: 130px;
+}
+
+.section-title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 54px;
+  color: #121212;
+}
+
+.section-description {
+  width: 660px;
+  margin: 0 auto;
+  text-align: center;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #707070;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.donate-container {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+
+.donate-box {
+  background: #fafafa;
+  border-radius: 5px;
+  padding: 45px 25px;
+  transition: ease-in-out 0.3s;
+  position: relative;
+  top: 0;
+}
+
+.donate-box:hover {
+  background: #ffeeee;
+  box-shadow: 0 0 0 2px #ff5959;
+  top: -10px;
+}
+
+.donate-box p {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  color: #707070;
+}
+
+.active {
+  background: #ffeeee;
+  box-shadow: 0 0 0 2px #ff5959;
+}
+
+.active p {
+  color: #ff5959;
+}
+
+.donate-input {
+  display: flex;
+  justify-content: center;
+}
+
+.donate input[type="number"] {
+  text-align: center;
+  border: none;
+  border-bottom: 1px solid #dadada;
+  width: 765px;
+  font-size: 18px;
+  line-height: 28px;
+  padding-bottom: 10px;
+}
+
+.donate input:focus {
+  outline: none;
+}
+
+/* Donate Plan Section Styles */
+.donate-plan {
+  margin-top: 130px;
+}
+
+.donate-plan-container {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+}
+
+.plan-box {
+  padding: 60px 25px;
+  width: 320px;
+  position: relative;
+  top: 0;
+  transition: top ease-in-out 0.8s;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.plan-box:hover {
+  top: -20px;
+}
+
+.first {
+  background: rgba(79, 157, 166, 0.1);
+  border-radius: 5px;
+}
+
+.second {
+  background: rgba(255, 89, 89, 0.1);
+  border-radius: 5px;
+}
+
+.third {
+  background: #fff4d6;
+  border-radius: 5px;
+}
+
+.plan-box img {
+  width: 60px;
+}
+
+.plan-box-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  color: #121212;
+  margin-top: 30px;
+  margin-bottom: 16px;
+}
+
+.plan-box-description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+
+  color: #707070;
+}
+
+/* Nomore Section Styles */
+
+.nomore-container .section-title,
+.nomore-container .section-description {
+  text-align: left;
+  width: 480px;
+}
+
+.nomore-container {
+  display: flex;
+  align-items: center;
+  gap: 95px;
+  margin-bottom: 100px;
+}
+
+/* Get Updates Section Styles */
+
+.subscribe {
+  display: flex;
+  justify-content: center;
+  background: #fff4d6;
+  padding: 75px 190px;
+  width: 590px;
+  margin: 0 auto;
+}
+
+.subscribe input[type="email"] {
+  background: #d9d9d9;
+  border-radius: 5px 0px 0px 5px;
+  padding: 15px 20px;
+  width: 275px;
+  border: none;
+}
+
+.subscribe input[type="email"] {
+  outline: none;
+}
+
+.subscribe input[type="button"] {
+  border-radius: 0;
+}
+
+/* Footer Section Styles */
+.footer {
+  margin-top: 130px;
+  background: #0b0d17;
+  padding: 45px;
+}
+
+.footer-title {
+  font-family: "Lobster";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 44px;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: #ff5959;
+}
+
+.footer-subtitle {
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+
+  font-feature-settings: "liga" off;
+
+  color: #d9dbe1;
 }
